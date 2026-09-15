@@ -28,8 +28,8 @@ export class MarisaOJProblemParser extends Parser {
     const bodyElems = elem.querySelector('.math-content').children;
     const cleanText = (str: string) => {
       return str
-        .replace(/^(Copy|Sao chép)\s*/ic, '')
-        .replace(/\s*(Copy|Sao chép)$/ic, '')
+        .replace(/^(Copy|Sao chép)\s*/i, '')
+        .replace(/\s*(Copy|Sao chép)$/i, '')
         .trim();
     };
     for (let i = 0; i < bodyElems.length; i++) {
